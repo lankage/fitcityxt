@@ -85,8 +85,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # This is required for devise to properly generate links inside the email views
-  config.action_mailer.default_url_options = { host: 'crispy.glbrc.org', port: 443 }
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {:address => "smtp.glbrc.org"}
+  #config.action_mailer.default_url_options = { host: 'crispy.glbrc.org', port: 443 }
+  #config.action_mailer.perform_deliveries = true
+  #config.action_mailer.delivery_method = :smtp
+  #config.action_mailer.smtp_settings = {:address => "smtp.glbrc.org"}
 end

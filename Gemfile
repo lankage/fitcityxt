@@ -31,7 +31,7 @@ gem 'net-ldap'
 gem 'annotate'
 gem 'kaminari'
 gem 'useragent', '~> 0.16.7'
-gem 'factory_girl_rails'
+gem 'factory_bot_rails'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

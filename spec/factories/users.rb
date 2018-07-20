@@ -28,7 +28,7 @@
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
 #
 
-FactoryGirl.define do
+FactoryBot.define do
   factory :user, aliases: [:created_by] do
     first_name { Faker::Name.unique.first_name }
     last_name { Faker::Name.unique.last_name }
