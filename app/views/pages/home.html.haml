@@ -2,13 +2,6 @@
 /- content_for :menu do
 /  = render partial: 'menu'
 /- content_for :pagetop do
-.row.tiles
-  = render 'layouts/tile', resource: 'users', title: 'Manage Users', color: 'SteelBlue', icon: 'users', count: true if policy(User).index?
-/ = render 'layouts/tile', resource: 'plant_experiments', title: 'Plant Experiments',count: true, color: 'ForestGreen', icon: 'leaf'
-/  = render 'layouts/tile', resource: 'inventory', color: 'FireBrick', icon: 'barcode', count: true
-/  = render 'layouts/tile', resource: 'materials', color: 'DarkSlateBlue', icon: 'archive', count: true
-/.row.smalltiles
-/  = render 'layouts/tile_small', resource: 'suppliers', color: 'GoldenRod', icon: 'address-card', count: true
-/
-/  = render 'layouts/tile_small', resource: 'experiment_fields', color: 'Sienna', icon: 'map-marker', count: true
-
+.container
+  .row
+    =image_tag('fclogo.png', :width => "60%", :height => "60%", class: 'center-block')

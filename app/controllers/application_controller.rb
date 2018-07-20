@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
 
   def after_sign_in_path_for(_resource)
     # dashboard_path
-    new_submission_path
+    root_path
   end
 
   def authorize_resource

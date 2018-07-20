@@ -1,6 +1,6 @@
 # user = CreateAdminService.new.call
 # puts 'CREATED ADMIN USER: ' << user.email
-include FactoryGirl::Syntax::Methods
+include FactoryBot::Syntax::Methods
 
 if Rails.env.development?
   print "Creating Users..."
