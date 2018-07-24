@@ -1,7 +1,53 @@
-/- content_for :top_bar do
+=link_to 'Take a Class', 'https://fitcity.wodify.com/OnlineSalesPortal/Home.aspx', class: 'btn btn-lg btn-primary'
 /- content_for :menu do
 /  = render partial: 'menu'
 /- content_for :pagetop do
 .container
   .row
     =image_tag('fclogo.png', :width => "60%", :height => "60%", class: 'center-block')
+  .row{style: 'background-color: #3380FF;'}
+    .center-block{style: 'text-align: center; width: 75%; font-size: 15pt; color: white;'}
+      %br
+      %i{style: 'font-size: 16pt;'} It's a journey. Not a destination.
+      %br
+      %h1 WELCOME TO FIT CITY
+      %br
+      Get fit. Get strong. Get healthy. Feel amazing. Do it all at Fit City Cross Training. Our state-of-the-art facility offers an intense workout experience in a comfortable, personal and professional atmosphere. Fit City Cross Training employs experienced coaches who are certified in many fitness disciplines. This allows them to draw from a broad base of knowledge to design a training regimen to give you the results you want. They are always on-hand and ready to help our members have a killer session each and  every time.
+      %br
+      %br
+  %br
+  %br
+
+  %br
+  %br
+  .row
+    .col-md-4
+      =image_tag('muscleman.png', :width => "60%", :height => "60%", class: 'center-block')
+    .col-md-7.center-block{style: 'margin-left: 50px;'}
+      .panel.panel-default
+        .panel-heading
+          ABOUT THE GYM
+        .panel-body
+          Fit City Cross Training's mission is to change your life. Our owner, Brian, opened Fit City in January of 2018 because he as dissatisfied with the myopic focus of all the other disciplines. So he designed a program drawing the best from all those other disciplines. We believe that fitness is not something that is ever "finished." It is a life-time pursuit, and every step on that journey is a rewarding one. It's a way of life. We founded our gym to be the second home — and family — for our members. Whether you're ripped and cut or if you’ve never stepped into a gym until the day you walk through our doors, Fit City Cross Training can help you be the "you" you dream of. Call us today!
+  %br
+  %br
+  %br
+  %br
+  .row
+    .col-md-5
+      =image_tag('lifting.png', :width => "90%", :height => "90%", class: 'center-block')
+    .col-md-5.col-md-offset-2
+      =image_tag('rowing.png', :width => "90%", :height => "90%", class: 'center-block')
+  .row
+    .col-md-5
+      .center-block{style: 'text-align: center; font-size: 15pt;'}
+        %h2 Competitor Training
+        If you're a fitness competitor, we have a workout just for you. It was designed by an Ironman veteran and certified Cross Fit trainer. In just an hour, you will have an intense
+        %i and complete
+        workout. Every muscle group you have and every movement category you need will be worked.
+    .col-md-5.col-md-offset-2
+      .center-block{style: 'text-align: center; font-size: 15pt;'}
+        %h2 Workout of the Data (WOD)
+        Our techniques build strength and endurance. All WODs are designed for maximum variety, but they are customized
+        %i for you
+        , to suit your experience and strength level.
