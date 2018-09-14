@@ -23,6 +23,24 @@
   }
 }
 
+.overlay {
+  position: absolute;
+  top: 90px;
+  padding: 0px 120px 0px 0px;
+  z-index: 2147483647;
+}
+.center {
+  margin: 0 auto; width: 852px;
+}
+.center-btn {
+  margin: 0px 0px 0px 395px;
+}
+
+.video {
+  z-index: 1;
+
+}
+
 .tiles .panel {
   cursor: pointer;
   transition: box-shadow 200ms;

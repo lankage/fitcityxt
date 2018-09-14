@@ -1,73 +1,38 @@
-- content_for :pagetitle do
-  %h1 About CRISpy
-
-%p{style: 'width: 80%;'}
-  CRISpy is a web application that generates and filters guide RNA sequences for CRISPR/Cas9 genome editing.  This tool focuses on generating guide RNA sequences for the S. cerevisiae genome S288C. 
 %br
-%br
-%h3 Change Log
-%br
-%p
-  %strong v1.3.1
-  %ul
-    %li Fixed bug where custom target submission returned no results with lowercase sequences
-    %li Progress spinner no longer showing on clicking back
-    %li Reverse complement of sgRNA sequence appears in export
-    %li Target name is appended to sgRNA name is export
-    %li Clear button added to custom target submission text input
-    %li Search bar added to custom target submissions list
-    %li Coordinate zoom within genome browser fixed for custom targets   
-%p
-  %strong v1.3
-  %ul
-    %li Custom target submissions now center the genome track view on the supplied custom sequence.  
-    %li Custom target submissions now can search for offsite hits within the selected genome <br /> even if the custom sequence is not present in the selected genome.
-    %li PAM sequence separated from spacer sequence in results table
-    %li Coverge count column now sortable
-    %li Can click the sgRNA sequence name to view that results page
-    %li Can export selected result rows to Excel
-    %li Helix in logo should now be 'Right-Handed'
-    %li Y22-3 Strain renamed GLBRCY22-3
-    %li Strain coverage was being mis-reported for sgRNAs targeting the reverse strand.  Counts should now be correct.
-    %li Fixed issue with 'Y22-3' name being mis-reported as 'Y22'
-    %li Y22-3 specific genes now included
-    %li Can click sgRNA sequences in the browser to jump to their listing in the results table
-%br
-%p
-  %strong v1.2
-  %ul
-    %li Gene dropdown change to auto-complete with required 2 characters of the gene symbol be entered.  Greatly improves the responsivesness of the form element.
-    %li Re-Order tracks in viewer to center gene track between positive and negative strand sgRNA sequence sites
-    %li Allow submission of custom sequences where not also searching for off target hits in a reference genome.  User sets genome = 'None'
-    %li Form elements on main page no longer spill out of panel on smaller screens
-    %li Add release notes to about page
-    %li Add Help page
-    %li Add Column for within gene coordinates to run pages
-
-    %li Add editable comments field on a specific guide RNAs page.  User who created it can edit.
-    %li Make Columns sortable on run results pages
-    %li Color code table cells where offsite target count is > 0
-%br 
-%p
-  %strong v1.1
-  %ul
-    %li Gene dropdown change to auto-complete
-    %li Track coloring inside of IGV to show strandedness
-    %li Input their own sequence and look for off-site targets
-%br
-%br
-%p
-  %h3 CRISpy utilizes the following open-source software tools:
-%br
-%br
-%p
-  %strong Cas-OFFinder 
-  %p.citation Bae S., Park J. & Kim J.-S. Cas-OFFinder: A fast and versatile algorithm that searches for potential off-target sites of Cas9 RNA-guided endonucleases. Bioinformatics 30, 1473-1475 (2014).
-%p
-  %strong sgRNA Scorer
-  %p.citation Chari R, Yeo N, Chavez A, Church GM (2017). sgRNA Scorer 2.0 – a species independent model to predict CRISPR/Cas9 activity. ACS Synthetic Biology. Accepted.
-
-%p
-  %strong CasFinder
-  %p.citation Aach J, Mali P, Church GM (2014). CasFinder: Flexible algorithm for identifying specific Cas9 targets in genomes. BioRxiv.
-%br
+  %br
+  .row
+    .col-md-12
+      .panel.panel-default
+        .panel-heading
+          ABOUT THE GYM
+        .panel-body
+          Fit City Cross Training's mission is
+          %b to change your life.
+          %br
+          %br
+          Our owner, Brian, opened Fit City in January of 2018 because he as dissatisfied with the myopic focus of all the other disciplines. So he designed a program drawing the best from all those other disciplines.
+          %br
+          %br
+          We believe that fitness is not something that is ever "finished." It is a life-time pursuit, and every step on that journey is a rewarding one. It's a way of life. We founded our gym to be the second home — and family — for our members. Whether you're ripped and cut or if you’ve never stepped into a gym until the day you walk through our doors, Fit City Cross Training can help you be the "you" you dream of. Call us today!
+  %br
+  %br
+  %br
+  %br
+  .row
+    .col-md-5
+      =image_tag('lifting.png', :width => "90%", :height => "90%", class: 'center-block')
+    .col-md-5.col-md-offset-2
+      =image_tag('rowing.png', :width => "90%", :height => "90%", class: 'center-block')
+  .row
+    .col-md-5
+      .center-block{style: 'text-align: center; font-size: 15pt;'}
+        %h2 Competitor Training
+        If you're a fitness competitor, we have a workout just for you. It was designed by an Ironman veteran and certified Cross Fit trainer. In just an hour, you will have an intense
+        %i and complete
+        workout. Every muscle group you have and every movement category you need will be worked.
+    .col-md-5.col-md-offset-2
+      .center-block{style: 'text-align: center; font-size: 15pt;'}
+        %h2 Workout of the Data (WOD)
+        Our techniques build strength and endurance. All WODs are designed for maximum variety, but they are customized
+        %i for you
+        , to suit your experience and strength level.

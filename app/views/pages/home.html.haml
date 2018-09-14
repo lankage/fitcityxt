@@ -1,10 +1,19 @@
-=link_to 'Take a Class', 'https://fitcity.wodify.com/OnlineSalesPortal/Home.aspx', class: 'btn btn-lg btn-primary'
+
 /- content_for :menu do
 /  = render partial: 'menu'
 /- content_for :pagetop do
 .container
   .row
-    =image_tag('fclogo.png', :width => "60%", :height => "60%", class: 'center-block')
+    %br
+    %br
+    .video
+      =video_tag("intro.MOV", :size => "852x480", :controls => false, :autobuffer => true, autoplay: :autoplay, loop: :loop, muted: :muted, :id => "intro-video", class: 'center')
+    .overlay
+      =image_tag('fclogo_transparent.png', :width => "65%", :height => "65%", class: 'center-block')
+      =link_to 'Take a Class', 'https://fitcity.wodify.com/OnlineSalesPortal/Home.aspx', class: 'btn btn-primary center-btn'
+    %br
+    %br
+    %br
   .row{style: 'background-color: #3380FF;'}
     .center-block{style: 'text-align: center; width: 75%; font-size: 15pt; color: white;'}
       %br
@@ -18,36 +27,3 @@
   %br
   %br
 
-  %br
-  %br
-  .row
-    .col-md-4
-      =image_tag('muscleman.png', :width => "60%", :height => "60%", class: 'center-block')
-    .col-md-7.center-block{style: 'margin-left: 50px;'}
-      .panel.panel-default
-        .panel-heading
-          ABOUT THE GYM
-        .panel-body
-          Fit City Cross Training's mission is to change your life. Our owner, Brian, opened Fit City in January of 2018 because he as dissatisfied with the myopic focus of all the other disciplines. So he designed a program drawing the best from all those other disciplines. We believe that fitness is not something that is ever "finished." It is a life-time pursuit, and every step on that journey is a rewarding one. It's a way of life. We founded our gym to be the second home — and family — for our members. Whether you're ripped and cut or if you’ve never stepped into a gym until the day you walk through our doors, Fit City Cross Training can help you be the "you" you dream of. Call us today!
-  %br
-  %br
-  %br
-  %br
-  .row
-    .col-md-5
-      =image_tag('lifting.png', :width => "90%", :height => "90%", class: 'center-block')
-    .col-md-5.col-md-offset-2
-      =image_tag('rowing.png', :width => "90%", :height => "90%", class: 'center-block')
-  .row
-    .col-md-5
-      .center-block{style: 'text-align: center; font-size: 15pt;'}
-        %h2 Competitor Training
-        If you're a fitness competitor, we have a workout just for you. It was designed by an Ironman veteran and certified Cross Fit trainer. In just an hour, you will have an intense
-        %i and complete
-        workout. Every muscle group you have and every movement category you need will be worked.
-    .col-md-5.col-md-offset-2
-      .center-block{style: 'text-align: center; font-size: 15pt;'}
-        %h2 Workout of the Data (WOD)
-        Our techniques build strength and endurance. All WODs are designed for maximum variety, but they are customized
-        %i for you
-        , to suit your experience and strength level.
