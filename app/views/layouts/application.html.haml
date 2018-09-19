@@ -10,7 +10,7 @@
     = csrf_meta_tags
     = favicon_link_tag ''
   %body{data: {controller: params[:controller], action: params[:action]}}
-    #wrapper
+    #wrapper{style: 'background-color: #f2f6f9;'}
       %header
         = render 'layouts/navigation'
       %main{role: "main"}

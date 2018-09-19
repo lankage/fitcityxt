@@ -9,32 +9,37 @@
       %span.icon-bar
     %a.navbar-brand{href: "/"} FitCityXT
 
-
     / Sidebar Menu Items - These collapse to the responsive navigation menu on small screens
-    #bs-sidebar-navbar-collapse-1.collapse.navbar-collapse.navbar-ex1-collapse
-      %ul.nav.navbar-nav.side-nav
-        %li{class: 'active'}
-          %a{href: '#'}
-            = fa_icon('calendar lg', style: 'padding-right: 15px;')
-            %span.pull-right Schedule
-        %li
-          %a{href: 'about'}
-            = fa_icon('question-circle lg', style: 'padding-right: 15px;')
-            %span.pull-right About
-        %li
-          %a{href: '#'}
-            = fa_icon('facebook lg', style: 'padding-right: 15px;')
-            %span.pull-right Facebook
-        %li
-          %a{href: '#'}
-            = fa_icon('map-marker lg', style: 'padding-right: 15px;')
-            %span.pull-right Directions
-        %li
-          %a{href: '#'}
-            = fa_icon('envelope lg', style: 'padding-right: 15px;')
-            %span.pull-right Contact Us
+    /#bs-sidebar-navbar-collapse-1.collapse.navbar-collapse.navbar-ex1-collapse
+    /  %ul.nav.navbar-nav.side-nav
+    /    %li{class: 'active'}
+    /      %a{href: 'https://app.wodify.com/AdminSchedule/Public_Class_Calendar.aspx?TenantKey=fnXodU71i8&Location_Id=6168&Program_Id=43897,45040'}
+    /        = fa_icon('calendar lg', style: 'padding-right: 15px;')
+    /        %span.pull-right Schedule
+    /    %li
+    /      %a{href: 'about'}
+    /        = fa_icon('question-circle lg', style: 'padding-right: 15px;')
+    /        %span.pull-right About
+    /    %li
+    /      %a{href: 'https://www.facebook.com/McFarlandWI/'}
+    /        = fa_icon('facebook lg', style: 'padding-right: 15px;')
+    /        %span.pull-right Facebook
+    /    %li
+    /      %a{href: '#'}
+    /        = fa_icon('map-marker lg', style: 'padding-right: 15px;')
+    /        %span.pull-right Directions
+    /    %li
+    /      %a{href: '#'}
+    /        = fa_icon('envelope lg', style: 'padding-right: 15px;')
+    /        %span.pull-right Contact Us
   / Top Menu Items
-  //%ul.nav.navbar-right.top-nav
+  %ul.nav.navbar-right.top-nav
+    %li= link_to fa_icon('question-circle lg'), 'about'
+    %li= link_to fa_icon('facebook lg'), 'https://www.facebook.com/McFarlandWI/'
+    %li= link_to fa_icon('calendar lg'), 'https://app.wodify.com/AdminSchedule/Public_Class_Calendar.aspx?TenantKey=fnXodU71i8&Location_Id=6168&Program_Id=43897,45040'
+    %li= link_to fa_icon('map-marker lg'), '#'
+    %li= link_to fa_icon('envelope lg'), '#'
+
   //  - if user_signed_in?
   //    %li.dropdown
   //      %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
